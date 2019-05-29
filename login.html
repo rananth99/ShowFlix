@@ -1,0 +1,135 @@
+<html>
+<head>
+  <title>LOGIN</title>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+  <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+    
+    <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-func.js"></script>
+  <link rel="stylesheet" href="css\signup\css\style.css">
+   <link rel="stylesheet" href="css\style.css">
+   <style type="text/css">
+#navbar {
+  overflow: hidden;
+  background-color: transparent;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 8px 8px;
+  text-decoration: none;
+  border-radius: 26px;
+  font-size: 15px;
+}
+
+#navbar a:hover {
+  background-color: red;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: red;
+  color: black;
+}
+</style>
+</head>
+<body>
+<!-- START PAGE SOURCE -->
+<div id="shell">
+  <div id="header">
+    <h1 id="logo">SHOWFLIX</a></h1>
+    <div class="social"> <span>FOLLOW US ON:</span>
+      <ul>
+        <li><a class="twitter" href="#">twitter</a></li>
+        <li><a class="facebook" href="#">faebook</a></li>
+        <li><a class="vimeo" href="#">vimeo</a></li>
+        <li><a class="rss" href="#">rss</a></li>
+      </ul>
+    </div>
+
+    <div id="navigation">
+        <div id="navbar">
+      <a href="javascript:void(0)"><a href="index.html">MOVIES</a>
+      <a href="javascript:void(0)"><a href="tvshow.html">TV SHOWS</a></a>
+      <a href="javascript:void(0)"><a href="movierating.html">MOVIES RATING</a></a>
+      <a href="javascript:void(0)"><a href="rating.html">SERIES RATING</a></a>
+      <a href="javascript:void(0)"><a href="contactus.html">CONTACT US</a></a>
+      <a href="javascript:void(0)"><a href="#">LOGIN</a></a>
+      </div>
+    </div>
+    <div id="sub-navigation">
+        <div id="navbar">
+      <a href="javascript:void(0)"><a href="comingup.html">UP COMING</a></a>
+      <a href="javascript:void(0)"><a href="https://www.imdb.com/">IMDB</a></a>
+      </div>
+      <div id="search">
+        <form action="#" method="get" accept-charset="utf-8">
+          <label for="search-field">SEARCH</label>
+          <input type="text" name="search field" value="Enter search here" id="search-field" class="blink search-field"  />
+          <input type="submit" value="GO!" class="search-button" />
+        </form>
+      </div>
+    </div>
+  </div>
+   <div id="login-box" style="border-radius: 26px;height: 450px;">
+    
+  <div class="left">
+    <h1 style="color: black;font-size: 24px;">SIGN UP</h1>
+    <form action="insert.php" method="post">
+      <input type="text" name="username" placeholder="Username" />
+      <input type="text" name="email" placeholder="Email" />
+      <input type="password" name="password1" placeholder="Password" />
+      <input type="password" name="password2" placeholder="Retype Password" />
+      <p style="color: red;font-size: 14px;">ALREADY REGISTERED?</p>
+    <p style="color: red;font-size: 14px;">PLEASE LOGIN</p>
+      <input type="submit" name="signup_submit" value="Sign me up">
+    </form> 
+  </div>
+  
+  <div class="right">
+    <h1 style="color: black;font-size: 24px;">LOGIN</h1>
+    <form action="login.php" method="post">
+    <input type="text" name="username" placeholder="Username" />
+    <input type="password" name="password" placeholder="Password" />
+    <p style="color: red;font-size: 14px;">NOT REGISTERED?</p>
+    <p style="color: red;font-size: 14px;">PLEASE SIGNUP</p>
+    <input type="submit" name="login_submit" value="Login" />
+    </form>
+  </div>
+  <div class="or" style="color: black;font-size: 18px;">OR</div>
+</div>
+</div>
+<div id="footer">
+    <p class="lf">Copyright &copy; 2018 <a href="index.html">SHOWFLIX</a> - All Rights Reserved</p>
+    <p class="rf">Design by <a href="index.html">SHOWFLIX.com</a></p>
+    <div style="clear:both;"></div>
+  </div>
+</div>
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>
